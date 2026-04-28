@@ -1,0 +1,6 @@
+ssh -i ~/.ssh/vm_access/user_key.txt ubuntu@158.160.247.3
+
+
+scp -i ~/.ssh/vm_access/user_key.txt docker-compose.production.yml \
+    ubuntu@158.160.247.3:/home/ubuntu/taski/docker-compose.production.yml 
+
