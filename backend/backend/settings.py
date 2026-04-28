@@ -1,5 +1,4 @@
 import os
-
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -12,8 +11,7 @@ DEBUG = True
 ALLOWED_HOSTS = os.getenv(
     'DJANGO_ALLOWED_HOSTS',
     'localhost,127.0.0.1,shocorp.hopto.org,158.160.199.218'
-    ).split(',')
-
+).split(',')
 
 # Application definition
 
